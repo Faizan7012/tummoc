@@ -25,7 +25,7 @@ export default function Signup(){
     dispatch(signupAPI(obj)).then((ans)=>{
       if(ans.status){
         setObj(init);
-        navigate('/login')
+        navigate('/')
       }
        alert(ans.message);
     }).catch((e)=>{

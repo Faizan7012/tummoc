@@ -24,7 +24,7 @@ export default function Login(){
     dispatch(signinAPI(obj)).then((ans)=>{
       if(ans.status){
         setObj(init);
-        navigate('/')
+        navigate('/home')
       }
        alert(ans.message);
     }).catch((e)=>{
